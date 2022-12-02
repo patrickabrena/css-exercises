@@ -22,6 +22,8 @@ body {
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.2);
   padding: 1rem;
+  display: flex;
+  /* border: solid orange 1px; */
 }
 
 .icon {
@@ -35,7 +37,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: solid green 1px;
 }
 
 .close-button {
@@ -49,7 +50,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: solid blue 1px;
 }
 
 button {
@@ -68,23 +68,24 @@ button.cancel {
   border: 1px solid #ddd;
   color: royalblue;
 }
-.top-line {
+
+.left {
+  /* border: solid red 1px; */
+  flex-direction: column;
+}
+.everything-else {
+  /* border: solid black 1px; */
+  flex-direction: column;
+  padding-left: 1rem;
+}
+.upper {
   display: flex;
-  /*border: solid black 1px;*/
 }
 .header {
   flex: 1;
   font-weight: bold;
   font-size: large;
-  /*border: solid rgb(216, 44, 44) 1px;*/
-
-  padding-left: 20px;
 }
 .text {
-  padding-left: 4rem;
-  /*border: solid orange 1px;*/
   padding-bottom: 1rem;
-}
-.bottom-buttons {
-  padding-left: 4rem;
 }
